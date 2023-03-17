@@ -22,7 +22,7 @@ switch experiment
         Lev_c = 0;
         save_txt = sprintf('C:\\Users\\sinat\\Dropbox\\Shared_Sina_Simone\\Numerics\\WOMP_Sina_numerics\\WOMP_paper_numerics\\data\\Fig_4\\Fig_4_11_%s_N_%d_s_%d_m_%d_n_iter_%d.mat', womp_type, N, s, m, n_iter);
     case 'srlasso'
-        womp_type = 'srlassol1_revised';
+        womp_type = 'srlassol1';
 %         lambda_omp_vals = 1.58e-1;
         lambda_omp_vals = [0, 0.158*(10.^(-0.25:0.25:0.25))];
         lambda_cvx_vals = 1.26e-1;
