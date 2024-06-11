@@ -1,5 +1,5 @@
 ## Update(s):
-* Big fixed (June 2024): function "set_options" to set options for CVX was missing and was added to src/utils.
+* Bug fixed (June 2024): function "set_options" to set options for CVX was missing and was added to src/utils.
 
 # Weighted LASSO-type Greedy Algorithms Based on OMP
 Code used to generate the figures of the article: [*The greedy side of the LASSO: New algorithms for weighted sparse recovery via loss function-based orthogonal mathcing pursuit*](https://arxiv.org/abs/2303.00844) by *Sina Mohammad-Taheri and Simone Brugiapaglia*.
