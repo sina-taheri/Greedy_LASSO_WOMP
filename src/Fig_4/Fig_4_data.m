@@ -2,7 +2,7 @@ close all;
 clear;
 clc;
 
-addpath C:\Users\sinat\Dropbox\Shared_Sina_Simone\Numerics\WOMP_Sina_numerics\WOMP_paper_numerics\src\utils
+addpath '../src/utils'
 
 %% Experiment hyperparameters
 m = 100;
@@ -20,7 +20,7 @@ switch experiment
 %         lambda_cvx_vals = [0, 10.^[-6:0.5:-1]];
         prg_cvx = 'wlasso';
         Lev_c = 0;
-        save_txt = sprintf('C:\\Users\\sinat\\Dropbox\\Shared_Sina_Simone\\Numerics\\WOMP_Sina_numerics\\WOMP_paper_numerics\\data\\Fig_4\\Fig_4_11_%s_N_%d_s_%d_m_%d_n_iter_%d.mat', womp_type, N, s, m, n_iter);
+        save_txt = sprintf('C:...\\data\\Fig_4\\Fig_4_11_%s_N_%d_s_%d_m_%d_n_iter_%d.mat', womp_type, N, s, m, n_iter);
     case 'srlasso'
         womp_type = 'srlassol1';
 %         lambda_omp_vals = 1.58e-1;
@@ -29,13 +29,13 @@ switch experiment
 %         lambda_cvx_vals = [0, 10.^[-1.5:0.2:-0.5]];
         prg_cvx = 'wsrlasso';
         Lev_c = 0;
-        save_txt = sprintf('C:\\Users\\sinat\\Dropbox\\Shared_Sina_Simone\\Numerics\\WOMP_Sina_numerics\\WOMP_paper_numerics\\data\\Fig_4\\Fig_4_12_%s_N_%d_s_%d_m_%d_n_iter_%d.mat', womp_type, N, s, m, n_iter);
+        save_txt = sprintf('C:...\\data\\Fig_4\\Fig_4_12_%s_N_%d_s_%d_m_%d_n_iter_%d.mat', womp_type, N, s, m, n_iter);
     case 'ladlasso'
         womp_type = 'ladlassol1';
         lambda_cvx_vals = 1;
         prg_cvx = 'wladlasso';
         Lev_c = 0.05;
-        save_txt = sprintf('C:\\Users\\sinat\\Dropbox\\Shared_Sina_Simone\\Numerics\\WOMP_Sina_numerics\\WOMP_paper_numerics\\data\\Fig_4\\Fig_4_13_%s_N_%d_s_%d_m_%d_n_iter_%d.mat', womp_type, N, s, m, n_iter);
+        save_txt = sprintf('C:...\\data\\Fig_4\\Fig_4_13_%s_N_%d_s_%d_m_%d_n_iter_%d.mat', womp_type, N, s, m, n_iter);
 end
 
 eta = 1e-3;
